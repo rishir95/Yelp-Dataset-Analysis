@@ -17,7 +17,7 @@ b	= FILTER	business	BY	(((ACOS((SIN(43.6532*3.142/180)*SIN((latitude)*3.142/180)
 c = GROUP b BY categories;
 d = FOREACH c GENERATE group as categories, AVG(b.stars) as avg_star,  AVG(b.review_count) as avg_review;
 
-STORE d INTO '/usr/hadoop/csvoutput/ques4'
+STORE d INTO '/usr/hadoop/csvoutput/task4'
     using PigStorage('\t','-schema');
 	
 dump d;

@@ -14,7 +14,7 @@ flatten(jsonMap#'categories') AS categories;
 c= Group b BY (city,categories);
 d = FOREACH c GENERATE FLATTEN(group) as (city,categories), AVG(b.stars) as avg_stars, AVG(b.review_count) as avg_review;
 
-STORE d INTO '/usr/hadoop/csvoutput/ques1'
+STORE d INTO '/usr/hadoop/csvoutput/task1'
     using PigStorage('\t','-schema');
 
 dump d;	

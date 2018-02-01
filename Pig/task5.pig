@@ -36,7 +36,7 @@ datajoin1 = FOREACH datajoin GENERATE name, date, stars;
 datefilter = FILTER datajoin1 BY (date matches '.*-01-.*') OR (date matches '.*-02-.*') OR (date matches '.*-03-.*') OR (date matches '.*-04-.*') OR (date matches '.*-05-.*');
 grp = GROUP datefilter BY name;
 finalset = FOREACH grp GENERATE group as name, AVG(datefilter.stars) as avg_star;
-STORE finalset INTO '/usr/hadoop/csvoutput/ques5'
+STORE finalset INTO '/usr/hadoop/csvoutput/task5'
     using PigStorage('\t','-schema');
 
 dump finalset;
