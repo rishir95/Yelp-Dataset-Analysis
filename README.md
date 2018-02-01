@@ -5,11 +5,6 @@ The average # of reviews and the average # of stars grouped by city and business
 
 #### Task 2:  
 Pivot the business categories as columns, and show the average # stars for each category, by (city,state):
->e.g. City State Mexican Chinese Cigars Restaurants …..  
->Toronto CA   4.3  2.3  5  3.4  
->Tucson AZ  5  3  1.2  4.1  
->etc
-
 
 #### Task 3:  
 What is the average rank (# stars) for businesses that are ‘Mexican’ category, AND offer takeout: (e.g. "attributes": {"RestaurantsTakeOut": true,…})
