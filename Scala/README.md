@@ -26,12 +26,16 @@ scala> val data=spark.read.json("C:/yelp_dataset/dataset/business.json")
 scala> val data1=spark.read.json("Z:/yelp_dataset/dataset/review.json")
 
 For Task 1:  
-'''scala> :load /yelp_dataset/prog/Task.scala  
-scala> val abc=Test.avgrevstar(data)  '''
+'''
+scala> :load /yelp_dataset/prog/Task.scala  
+scala> val abc=Test.avgrevstar(data)
+'''
 
 For Task 2:  
+'''
 scala> :load /yelp_dataset/prog/Task2.scala  
-scala> val abc=Test.pivotavg(data)  
+scala> val abc=Test.pivotavg(data)
+'''
 
 For Task 3:  
 scala> :load /yelp_dataset/prog/Task3.scala  
