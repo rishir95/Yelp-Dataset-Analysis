@@ -22,10 +22,11 @@ Once the files have been loaded the functions can be simply run by passing the p
 scala> val data=spark.read.json("C:/yelp_dataset/dataset/business.json")
 scala> val data1=spark.read.json("Z:/yelp_dataset/dataset/review.json")
 
-For Task 1:
-
+For Task 1
+'''
 scala> :load /yelp_dataset/prog/Task.scala
 scala> val abc=Test.avgrevstar(data)
+'''
 
 For Task 2:
 scala> :load /yelp_dataset/prog/Task2.scala
