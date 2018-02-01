@@ -10,7 +10,7 @@ A. Loading .scala file
 ----------------------------
 In order to load the .scala file the ":load" command must be used along with the path of the file.
 
-e.g 	if the spark is installed in C directory and the .scala file is located at c\yelp_dataset\prog\Taask.scala	
+e.g 	if the spark is installed in C directory and the .scala file is located at c\yelp_dataset\prog\Taask.scala.	
 		The command to load the file will be :
 		
 		scala> :load /yelp_dataset/prog/Task.scala
