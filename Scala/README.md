@@ -2,7 +2,7 @@
 Table of Contents
 ---------------------------
 
-A. Loading .scala file
+A. Loading .scala file  
 B. Executing .scala file
 
 ----------------------------
