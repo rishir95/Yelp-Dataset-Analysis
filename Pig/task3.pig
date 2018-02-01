@@ -16,7 +16,7 @@ c = FILTER b by categories == 'Mexican' AND attributes == 'true';
 d = GROUP c BY (categories,attributes);
 e = FOREACH d GENERATE FLATTEN(group) as (categories,attributes) , AVG(c.stars) as avg_star;
 
-STORE e INTO '/usr/hadoop/csvoutput/ques3'
+STORE e INTO '/usr/hadoop/csvoutput/task3'
     using PigStorage('\t','-schema');
 
 dump e;
